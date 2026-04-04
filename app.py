@@ -157,7 +157,7 @@ if st.session_state.search_results is not None and st.button("📊 Predict Price
 
 
     st.dataframe(
-        styled_df = df.style.applymap(color_recommendation, subset=["Recommendation"])
+        styled_df = df.style.applymap(color_recommendation, subset=["Recommendation"]),
         styled_df = styled_df.hide(axis="index")
     st.dataframe(styled_df)
     )
